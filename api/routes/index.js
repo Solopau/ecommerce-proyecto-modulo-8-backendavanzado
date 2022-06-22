@@ -1,0 +1,1 @@
+export { router as ruta_administrador } from './ruta_administrador.js';
