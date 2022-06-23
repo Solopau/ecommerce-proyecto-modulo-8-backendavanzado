@@ -1,2 +1,2 @@
 
-export * as controlador_administrador from './controlador-administrador.js';
+export * as controlador_administrador from './controlador_administrador.js';
