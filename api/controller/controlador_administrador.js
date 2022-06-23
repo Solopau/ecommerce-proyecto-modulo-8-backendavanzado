@@ -1,3 +1,4 @@
+import administrador from '../models/administrador.js';
 import { administradorSchema } from '../models/index.js';
 
 export const createAdministrador = async (req, res) => {
@@ -17,10 +18,10 @@ export const createAdministrador = async (req, res) => {
 };
 
 export const updateAdministrador = async (req, res) => {
-    const { id } = req.body;
+    const { administrador } = req.body;
   
     try {
-      const administrador = await administradorSchema.findByIdAndUpdate(id);
+      const updateAdministrador = await administradorSchema.findByIdAndUpdate(administrador);
       return res.json({
         msg: 'Administrador actualizado correctamente',
         data: updateAdministrador,
@@ -36,7 +37,7 @@ export const updateAdministrador = async (req, res) => {
     const { id } = req.body;
   
     try {
-      const administrador = await administradorSchema.findByIdAndDelete (id);
+      const deleteAdministrador = await administradorSchema.findByIdAndDelete (administrador);
       return res.json({
         msg: 'Administrador eliminado correctamente',
         data: deleteAdministrador,

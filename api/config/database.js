@@ -12,7 +12,7 @@ db.on('error', (error) => {
 });
 
 db.on('connected', () => {
-  console.log('Conexiíon a la base de datos establecida ');
+  console.log('Conexíon a la base de datos establecida ');
 });
 
 db.on('disconnected', () => {
@@ -36,7 +36,5 @@ export default function init() {
       ? `${database.HOST}:${database.PORT}/${database.NAME}?retryWrites=true&w=majority`
       : `${database.HOST}/${database.NAME}?retryWrites=true&w=majority`
   
-
-
   mongoose.connect(uri);
 }
