@@ -35,6 +35,6 @@ export default function init() {
   uri += config.database.HOST === 'localhost' 
       ? `${database.HOST}:${database.PORT}/${database.NAME}?retryWrites=true&w=majority`
       : `${database.HOST}/${database.NAME}?retryWrites=true&w=majority`
-
+  console.log (uri),
   mongoose.connect(uri);
 }
