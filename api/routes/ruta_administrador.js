@@ -1,7 +1,7 @@
-import { express } from 'express';
-import { controlador_administrador } from '../controller';
+import { Router } from 'express';
+import { controlador_administrador } from '../controller/index.js';
 
-const router = express.Router ();
+const router = Router ();
 
 router.post('/administrador', controlador_administrador.createAdministrador);
 router.put('/administrador', controlador_administrador.updateAdministrador);
