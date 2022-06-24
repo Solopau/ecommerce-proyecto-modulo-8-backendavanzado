@@ -14,10 +14,10 @@ const administradorSchema = new mongoose.Schema({
         required:false
     },
     fecha_de_nacimiento: {
-        type:Date,
+        type:String,
         required:true
     },
-    numero_de_indentificación: {
+    numero_de_identificación: {
         type:Number,
         required:true
     },
